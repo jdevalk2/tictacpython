@@ -2,6 +2,7 @@
 from game.constants import Constants
 
 class PlayField:
+    """Describes the play field and knows when a win or lose situation is reached"""
 
     def __init__(self, width=Constants.WIDTH, height=Constants.HEIGHT, state=None):
         self.width = width

@@ -2,6 +2,7 @@
 from game.playfield import PlayField
 
 class CandidateAction:
+    """Describe a move the computer could make and its result play state"""
 
     def __init__(self, play_x: int, play_y: int, token_played: str, field: PlayField):
         self.field = field

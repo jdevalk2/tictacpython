@@ -3,6 +3,7 @@ from game.candidate_action import CandidateAction
 from game.constants import Constants
 
 class Visitor2:
+    """Scores the different branches of the calculated tree so that the best one can be chosen"""
 
     def score_tree(self, parent: CandidateAction):
         self.max_score = -1

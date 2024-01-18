@@ -6,6 +6,7 @@ from game.visitor import Visitor2
 from game.constants import Constants
 
 class Game:
+    """Entry point for Tic Tac Toe game"""
 
     def __init__(self):
         self.playfield = PlayField(width=Constants.WIDTH, height=Constants.HEIGHT)
@@ -52,6 +53,8 @@ class Game:
         return x, y
     
     def loop(self):
+        """Alternate between computer and player turns until a result is reached or QUIT"""
+
         text = ""
         game.playfield.print()
         

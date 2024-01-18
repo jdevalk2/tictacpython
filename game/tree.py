@@ -3,6 +3,7 @@ from game.candidate_action import CandidateAction
 from game.constants import Constants
 
 class TreeBuilder:
+    """Takes a play state and computes all the possible moves with their win and lose outcome"""
 
     computer_token = "O"
     player_token = "X"
